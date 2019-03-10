@@ -11,7 +11,7 @@ Run TransferApplicationTests
 1. Use GET method
 `http://localhost:8080/accounts`
 for get all accounts
-### response:
+response:
 {
   "totalAccounts": 3,
   "accounts": [
@@ -35,7 +35,7 @@ for get all accounts
 2. Use GET method
 `http://localhost:8080/accounts/1`
 for get accounts/1 detail
-### response:
+response:
 {
   "id": "1",
   "accountName": "USD Account",
@@ -48,7 +48,7 @@ for get accounts/1 detail
 3. Use POST method
 `http://localhost:8080/transaction`
 for make transfer
-### request:
+request:
 {
   "currencyCode": "HKD",
   "amount": 100,
@@ -56,7 +56,7 @@ for make transfer
   "toAccountId": "3"
 }
 
-### response:
+response:
 {
   "code": 100,
   "message": "Success",
