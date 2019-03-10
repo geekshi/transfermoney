@@ -12,6 +12,7 @@ Run TransferApplicationTests
 `http://localhost:8080/accounts`
 for get all accounts
 ### response:
+```sh
 {
   "totalAccounts": 3,
   "accounts": [
@@ -31,12 +32,13 @@ for get all accounts
       "herf": "/accounts/3"
     }
 }
-
+```
 
 2. Use GET method
-`http://localhost:8080/accounts/1`
-for get accounts/1 detail
-### response:
+`http://localhost:8080/accounts/{id}`
+for retrieve accounts/{id} balance
+#### response:
+```sh
 {
   "id": "1",
   "accountName": "USD Account",
@@ -45,20 +47,23 @@ for get accounts/1 detail
     "currencyCode": "USD"
   }
 }
-
+```
 
 3. Use POST method
 `http://localhost:8080/transaction`
 for make transfer
-### request:
+#### request:
+```sh
 {
   "currencyCode": "HKD",
   "amount": 100,
   "fromAccountId": "2",
   "toAccountId": "3"
 }
+```
 
-### response:
+#### response:
+```sh
 {
   "code": 100,
   "message": "Success",
@@ -81,7 +86,7 @@ for make transfer
     }
   ]
 }
-
+```
 
 ## API document
 http://localhost:8080/swagger-ui.html
