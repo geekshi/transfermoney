@@ -1,11 +1,6 @@
 # Transfer money RESTful API
 A Java RESTful API for retrieve balance and make a transfer between 2 accounts
-
-## Technologies
-- Spring Boot + RESTful
-- Use memory for database
-- JUnit
-- Swagger2 API docs
+For demo goal, just use memory for data access
 
 ## How to run
 `./mvnw spring-boot:run`
