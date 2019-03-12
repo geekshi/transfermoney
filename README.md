@@ -1,9 +1,11 @@
 # Transfer money RESTful API
 A Java RESTful API for retrieve balance and make a transfer between 2 accounts. For demo goal, just use memory for data access
 
-## How to run
-- `mvn install`
-- `java -jar target/transfermoney-0.0.1-SNAPSHOT.jar`
+## Install
+`mvn install`
+
+## Run API
+`java -jar target/transfermoney-0.0.1-SNAPSHOT.jar`
 
 ## Unit test
 Run TransferApplicationTests
